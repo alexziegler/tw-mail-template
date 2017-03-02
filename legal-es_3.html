@@ -110,7 +110,7 @@
 		table.h2-container td{
 			margin:0;
 		}
-		table.contratos{
+    table.contratos{
 			font-size:1em;
 			width:100%;
 		}
@@ -119,13 +119,22 @@
 			padding:6px 10px;
 			border-bottom:1px rgba(0,0,0,0.2) solid;
 		}
-		table.contratos td.empresa{
+    table.contratos thead td {
+      color: #93715C;
+      letter-spacing: 0.3em;
+      font-size: 0.8em;
+      text-transform: uppercase;
+    }
+    table.contratos td.empresa{
+			text-align:right;
+		}
+		table.contratos tbody td.empresa{
 			text-align:right;
 			color:#9E264F;
 			font-weight:700;
 			width:25%;
 		}
-		table.contratos td.status{
+		table.contratos tbody td.status{
 			width:35%;
 		}
 		p.sub{
@@ -361,11 +370,20 @@
                 </table>
                 <p class="sub">(texto)</p>
                 <table cellspacing="0" class="contratos">
+                  <thead>
+                    <tr>
+                      <td class="empresa">Cliente</td>
+                      <td>Proyeto</td>
+                      <td>Status</td>
+                      <td>Observaciones</td>
+                    </tr>
+                  </thead>
                   <tbody>
                     <tr>
                       <td class="empresa">Cliente</td>
                       <td>Proyecto</td>
-                      <td class="status">Status</td>
+                      <td>Status</td>
+                      <td>Observaciones</td>
                     </tr>
                   </tbody>
                 </table>
