@@ -124,6 +124,7 @@
       letter-spacing: 0.3em;
       font-size: 0.8em;
       text-transform: uppercase;
+      vertical-align: bottom;
     }
     table.contratos td.empresa{
 			text-align:right;
@@ -137,6 +138,9 @@
 		table.contratos tbody td.status{
 			width:35%;
 		}
+    table.urgente {
+      table-layout: fixed;
+    }
 		p.sub{
 			color:rgba(0,0,0,0.6);
 			margin:0 0 1.5em;
@@ -369,15 +373,17 @@
                   </tr>
                 </table>
                 <p class="sub">(texto)</p>
-                <table cellspacing="0" class="contratos">
+                <table cellspacing="0" class="contratos urgente">
                   <thead>
                     <tr>
                       <td class="empresa">Cliente</td>
-                      <td>Proyeto</td>
-                      <td>Status</td>
+                      <td>Proyecto</td>
+                      <td>Status del proyecto</td>
                       <td>Observaciones</td>
                     </tr>
                   </thead>
+                </table>
+                <table cellspacing="0" class="contratos urgente">
                   <tbody>
                     <tr>
                       <td class="empresa">Cliente</td>
